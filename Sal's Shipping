@@ -1,0 +1,19 @@
+premium = 125
+
+
+
+
+def total_cost(weight):
+  ground_shipping = lbs * 4.0 + 20
+  drone_shipping = (lbs * 4.5)
+  lbs = weight
+  if ground_shipping > drone_shipping:
+    print(drone_shipping)
+    elif drone_shipping > ground_shipping:
+      print(ground_shipping)
+      elif premium > ground_shipping and drone_shipping:
+        print(premium)
+
+
+print(total_cost(4.8))
+print(total_cost(41.5))
